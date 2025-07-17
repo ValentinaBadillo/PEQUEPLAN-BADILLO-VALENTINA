@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Visible - Belluccia 3</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+   <!-- Logo como imagen SVG -->
+  <a class="navbar-brand" href="#Hero">
+  <img src="pequeplan-logo.svg" class="logo logo-blanco" alt="Logo" height="45">
+  <img src="pequeplan-logo2.svg" class="logo logo-color d-none" alt="Logo" height="45">
+</a>
+
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+  <img src="navbar-icon.svg" alt="Abrir menú" width="25">
+</button>
+
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#Nosotros">Sobre nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Peque">¿Cómo funciona?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Planes">Planes</a></li>
+             <li class="nav-item"><a class="nav-link" href="#Pequeswap">PequeSwap</a></li>
+               <li class="nav-item"><a class="nav-link" href="#Opiniones">Opiniones</a></li>
+               <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+   <section id="Hero" class="hero">
+  <div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="row align-items-center">
+      <!-- Texto principal -->
+      <div class="col-lg-5">
+        <h1 class="h1-customy">
+          <span class="color-principal">CADA MES UNA</span><br>
+          <span class="color-principal">NUEVA</span> <span class="color-aventura">AVENTURA</span>
+        </h1>
+        <p class="p-custom mt-3">Caja quincenal directo a la puerta de tu casa con kits <span class="d-none d-md-inline"><br></span>
+        de actividades ¡Accesible y para toda la familia!</p>
+        <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-4">
+          <a href="#Planes" class="btn btn-dark btn-custom">Suscribite ahora</a>
+        </div>
+      </div>
+
+      <!-- Imagen destacada -->
+      <div class="col-lg-7 text-center">
+       <img src="NI%C3%91A.HERO.svg" alt="Imagen Hero" class="img-fluid img-rounded hero-img float-animation">
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<!-- /HERO -->
+  
+<!-- CONTENEDOR CON FONDO -->
+<div class="fondo-personalizado">
+
+<!-- QUIENES SOMOS -->
+<section id="Nosotros" class="section-spacing py-2">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Imagen -->
+  <div class="col-lg-7 mb-4 mb-lg-0">
+  <img src="pequeplan.png" class="img-fluid img-rounded img-pequeplan" alt="Imagen ilustrativa">
+</div>
+
+      <!-- Texto + Ítems -->
+      <div class="col-lg-5">
+        <h2 class="display-5 h2-custom mb-4">¿QUÉ ES PEQUEPLAN?</h2>
+        <p class="lead-custom">Pequeplan es una caja quincenal llena de diversión y aprendizaje. Cada kit incluye materiales seguros y una guía paso a paso para acompañar el momento en familia.</p>
+        
+        <!-- Lista de ítems -->
+        <ul class="lista-pequeplan list-unstyled mt-4">
+          <li class="d-flex align-items-center mb-1">
+            <img src="splash-rojo.png" alt="Actividades" class="icono-item me-3" width="35">
+            <span><strong>Actividades recreativas</strong></span>
+          </li>
+          <li class="d-flex align-items-center mb-1">
+            <img src="splash-naranja.png" alt="Experimentos" class="icono-item me-3" width="35">
+            <span><strong>Experimentos divertidos</strong></span>
+          </li>
+          <li class="d-flex align-items-center mb-1">
+            <img src="splash-azul.png" alt="Recetas" class="icono-item me-3" width="35">
+            <span><strong>Recetas seguras y fáciles</strong></span>
+          </li>
+          <li class="d-flex align-items-center mb-1">
+            <img src="splash-verde.png" alt="Jardinería" class="icono-item me-3" width="35">
+            <span><strong>Jardinería para los chicos</strong></span>
+          </li>
+        </ul>
+
+        <a href="#Kit" class="btn btn-primary mt-3">Saber más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 3 PASOS -->
+<section id="Peque"></section>
+<section class="section text-center">
+  <div class="container">
+    <h2 class="mb-5 text-uppercase h2-custom">¿CÓMO FUNCIONA?</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="valija.png" class="img-fluid mx-auto d-block" alt="Paso 1">
+        <h5 class="paso-titulo">ELEGÍ UNA SUSCRIPCIÓN</h5>
+        <p class="p">Elegí la suscripción perfecta para divertirse<span class="d-none d-md-inline"><br></span>
+y aprender todos juntos en familia</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="camion.png" class="img-fluid mx-auto d-block" alt="Paso 2">
+        <h5 class="paso-titulo">RECIBÍ TU CAJA MENSUAL</h5>
+        <p class="p">Recibí una nueva aventura cada 15 días<span class="d-none d-md-inline"><br></span>
+directo a la puerta de tu casa</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="arte.png" class="img-fluid mx-auto d-block" alt="Paso 3">
+        <h5 class="paso-titulo">CONTINUA LA DIVERSIÓN</h5>
+        <p class="p">¡Y listo! Ahora podés empezar la diversión<span class="d-none d-md-inline"><br></span>
+pasando el tiempo en familia</p>
+      </div>
+    </div>
+  </div>
+ 
+</section>
+
+
+</div>
+
+<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+  
+  <!-- Sección con fondo a pantalla completa -->
+<section id="Planes" class="section-planes text-center">
+  <div class="container py-5">
+    
+    <!-- ✅ Este div extra agrega espacio interno arriba -->
+    <div style="padding-top: 250px;">
+
+    
+      <h2 class="h2-sus">
+  <span class="text-white">PLANES DE</span>
+  <span class="text-green">SUSCRIPCIÓN</span>
+</h2>
+  
+      <section class="row mt-5">
+        <!-- tus 3 tarjetas acá -->
+        
+<!-- Card: Plan Básico -->
+<div class="col-md-4 mb-4">
+<div class="card h-100 p-0 position-relative">
+
+    <!-- Encabezado con color que ocupa todo el ancho -->
+    <div class="bg-yellow-custom p-4 rounded-top">
+  <h5 class="plan-title m-0">PLAN BÁSICO</h5>
+  <p class="plan-price display-6 m-0">$30.000 <small>/ mes</small></p>
+</div>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="caja%201.png" class="img-fluid img-rounded my-5" alt="Plan Básico">
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start px-5">
+        <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2"> Mini Kit: Huerta en casa</li>
+        <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2"> Guía paso a paso</li>
+        <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2"> Acceso a microvideos</li>
+        <li class="suscrip-item"><img src="icon2.svg" width="20" class="d-inline-block align-middle me-2"> Kit de decoración</li>    
+        <li class="suscrip-item"><img src="icon2.svg" width="20" class="d-inline-block align-middle me-2"> Beneficio PequeSwap</li>  
+        </ul>
+
+        <!-- Botón CTA -->
+       <div class="text-center mt-3">
+  <a href="#" class="btn btn-primary" style="width: 60%;">Elegir plan</a>
+</div>
+
+      </div>
+    </div>
+
+    <!-- Card: Plan Deluxe (Recomendado) -->
+    <div class="col-md-4 mb-4">
+    <div class="card p-0 h-100 border border-primary card-tall position-relative">
+    <img src="star-icon.png" alt="Destacado" class="star-badge">
+        
+        <!-- Encabezado con color que ocupa todo el ancho -->
+     <div class="bg-green-custom p-4 rounded-top">
+      <h5 class="plan-title m-0">PLAN DELUXE</h5>
+      <p class="plan-price display-6 m-0">$50.000 <small>/ mes</small></p>
+    </div>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="caja%202.png" class="img-fluid img-rounded my-5" alt="Plan Pro">
+        
+        <!-- Lista de beneficios -->
+       <ul class="list-unstyled text-start px-5">
+  <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2">Super Kit: Huerta en casa</li>
+  <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2">Kit de decoración</li>
+  <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2">Diario de cultivo</li>
+  <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2">Guía paso a paso</li>
+  <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2">Acceso a microvideos</li>
+  <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2">Beneficio PequeSwap</li>
+</ul>
+
+
+    <!-- Botón CTA -->
+<div class="text-center mt-3">
+  <a href="plan.html" class="btn btn-primary" style="width: 60%;">Elegir plan</a>
+</div>
+
+
+      </div>
+    </div>
+
+        <!-- Card: Plan Premium -->
+    <div class="col-md-4 mb-4">
+     <div class="card h-100 p-0 position-relative">
+
+     
+                <!-- Encabezado con color que ocupa todo el ancho -->
+     <div class="bg-greener-custom p-4 rounded-top">
+      <h5 class="plan-title m-0">PLAN PREMIUM</h5>
+      <p class="plan-price display-6 m-0">$40.000 <small>/ mes</small></p>
+    </div>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="caja%203.png" class="img-fluid img-rounded my-5" alt="Plan Premium">
+
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start px-5">
+        <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2"> Kit: Huerta en casa</li>
+        <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2"> Kit de decoración</li>
+        <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2"> Guía paso a paso</li>
+        <li class="sus-item"><img src="icon.svg" width="20" class="d-inline-block align-middle me-2"> Acceso a microvideos</li>
+        <li class="suscrip-item"><img src="icon2.svg" width="20" class="d-inline-block align-middle me-2"> Beneficio PequeSwap</li>
+        </ul> 
+
+
+           <!-- Botón CTA -->
+       <div class="text-center mt-3">
+  <a href="#" class="btn btn-primary" style="width: 60%;">Elegir plan</a>
+</div>
+
+      </div>
+    </div>
+      </section>
+      </div>
+    </div>
+    </section>
+      
+  
+  
+<div class="fondo-full">
+
+
+
+<!-- SECCIÓN MARCAS -->
+<section class="py-6 text-center mb-5" style="padding-top: 140px;">
+  <div class="container">
+    <div class="row align-items-center">
+
+    <h2 class="mb-5 h2-custom">Marcas que nos acompañan</h2>
+    <div class="row g-4 justify-content-between">
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <img src="MARCA1.png" alt="Marca 1" class="img-fluid brand-icon mx-auto d-block">
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <img src="MARCA2.png" alt="Marca 2" class="img-fluid brand-icon mx-auto d-block">
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <img src="MARCA3.png" alt="Marca 3" class="img-fluid brand-icon mx-auto d-block">
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <img src="MARCA4.png" alt="Marca 4" class="img-fluid brand-icon mx-auto d-block">
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <img src="MARCA5.png" alt="Marca 5" class="img-fluid brand-icon mx-auto d-block">
+      </div>
+    </div>
+     
+  </div>
+  </div>
+  </section>
+
+    
+    <!-- SECCIÓN RUBROS -->
+    
+<section class="section-spacing text-center">
+  <div class="container">
+    <h2 class="h2-custom">PENSADO PARA INSPIRAR</h2>
+    <p class="mb-5">Animamos a los chicos a descubrir y explorar distintas áreas de la creatividad</p>
+    <div class="row justify-content-center">
+
+      <!-- Ítem 1 -->
+<div class="col-md-3 mb-4 item-arte">
+  <div class="d-flex flex-column align-items-center">
+    <img src="blue-card1.png" alt="Arte" style="width: 300px; height: auto;">
+    <div class="actividad-box text-center position-relative">
+      <h4 class="actividad-titulo mt-3">Arte</h4>
+      <div class="actividad-imagen"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Ítem 2 -->
+<div class="col-md-3 mb-4 item-ciencia">
+  <div class="d-flex flex-column align-items-center">
+    <img src="blue-card2.png" alt="Ciencia" style="width: 300px; height: auto;">
+    <div class="actividad-box text-center position-relative">
+      <h4 class="actividad-titulo mt-3">Cocina</h4>
+      <div class="actividad-imagen"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Ítem 3 -->
+<div class="col-md-3 mb-4 item-tecnologia">
+  <div class="d-flex flex-column align-items-center">
+    <img src="blue-card3.png" alt="Tecnología" style="width: 300px; height: auto;">
+    <div class="actividad-box text-center position-relative">
+      <h4 class="actividad-titulo mt-3">Ciencia</h4>
+      <div class="actividad-imagen"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Ítem 4 -->
+<div class="col-md-3 mb-4 item-juego">
+  <div class="d-flex flex-column align-items-center">
+    <img src="blue-card4.png" alt="Juego" style="width: 300px; height: auto;">
+    <div class="actividad-box text-center position-relative">
+      <h4 class="actividad-titulo mt-3">Jardinería</h4>
+      <div class="actividad-imagen"></div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECCIÓN C: Imagen derecha con beneficios -->
+<section id="Kit" class="section-spacing container">
+  <div class="row align-items-center">
+    
+    <!-- Texto con íconos -->
+    <div class="col-lg-6">
+      <h2 class="display-5 h2-custom mb-5">¿POR QUÉ ELEGIR NUESTROS KITS?</h2>
+
+      <!-- Ítem 1 -->
+  <div class="d-flex align-items-start mb-5">
+  <img src="cora.png" alt="Icono corazón" class="benefit-icon me-3 mt-1">
+    <div>
+    <h5 class="paso-titulo">Pensados para toda la familia</h5>
+    <p class="p-cut mb-0">Diseñados para seguir creciendo siempre en familia.</p>
+   </div>
+  </div>
+
+      <!-- Ítem 2 -->
+      <div class="d-flex align-items-start mb-5">
+        <img src="cora.png" alt="Icono corazón" class="benefit-icon me-3 mt-1">
+        <div>
+          <h5 class="paso-titulo">Directo a la puerta de tu casa</h5>
+          <p class="p-cut mb-0">Con envío directo a casa, sin necesidad de moverte.</p>
+        </div>
+      </div>
+
+      <!-- Ítem 3 -->
+      <div class="d-flex align-items-start mb-5">
+       <img src="cora.png" alt="Icono corazón" class="benefit-icon me-3 mt-1">
+        <div>
+          <h5 class="paso-titulo">Educativo y divertido a la vez</h5>
+          <p class="p-cut mb-0">Actividades educativas pensadas de forma creativa.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+    <img src="kid.png" class="img-fluid img-rounded benefit-img" alt="Imagen ilustrativa">
+    </div>
+  </div>
+</section>
+  
+  
+<!-- PEQUESWAP -->
+<section id="Pequeswap" class="section-spacing text-center py-5">
+  <div class="container">
+    <h2 class="mb-5 text-uppercase h2-custom">APROVECHA EL #PEQUESWAP</h2>
+    <div class="row g-5 justify-content-between">
+      
+      <!-- Paso 1 -->
+      <div class="col-md-3 mb-4">
+        <img src="paso1.png" class="mb-3" alt="Suscripción">
+        <h5 class="swap-titulo">Terminaste tu kit</h5>
+        <p class="p">¡Excelente trabajo! <br> Lograste completar tu kit</p>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="col-md-3 mb-4">
+        <img src="paso2.png" class="mb-3" alt="Entrega">
+        <h5 class="swap-titulo">Punto pequeswap</h5>
+        <p class="p">Lleva tu kit al punto pequewap <br> más cercano</p>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="col-md-3 mb-4">
+        <img src="paso3.png" class="mb-3" alt="Actividades">
+        <h5 class="swap-titulo">Hace el intercambio</h5>
+        <p class="p">Entregá tu kit completo <br> y recibí uno nuevo</p>
+      </div>
+
+      <!-- Paso 4 -->
+      <div class="col-md-3 mb-4">
+        <img src="paso4.png" class="mb-3" alt="Familia feliz">
+        <h5 class="swap-titulo">Una nueva aventura</h5>
+        <p class="p">Abrí tu nuevo kit y seguí <br> aprendiendo</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+  <!-- TESTIMONIOS -->
+  <section id="Opiniones" class="section-spacing container">
+  <h2 class="h2-custom text-center mb-4">¡MUCHAS FAMILIAS NOS ELIGEN!</h2>
+  <p class="mb-5 text-center">Así viven otras familias la experiencia Pequeplan</p>
+  <div class="row justify-content-center align-items-stretch">
+
+    <!-- Testimonio 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="testimonial-card h-100">
+        <img src="comillas.svg" width="45">
+        <p class="p">Al principio pensé que era solo para entretener, pero me sorprendió lo educativos que son los kits. ¡Increíble!</p>
+        <hr>
+        <div class="d-flex align-items-center justify-content-between mt-3">
+          <div class="d-flex align-items-center">
+            <img src="man.png" class="rounded-circle me-2 avatar-img" alt="Pablo">
+            <div>
+              <strong class="d-block">Pablo Torres</strong>
+              <small class="meta-info">3 meses con Pequeplan</small>
+            </div>
+          </div>
+          <div class="text-end">
+           <img src="5-estrellas.svg" alt="★" width="90"> <br>
+            <small class="meta-info">5.0 Estrellas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonio central destacado -->
+    <div class="col-md-4 mb-4">
+      <div class="testimonial-card h-100 featured">
+      <img src="comillas.svg" width="75" class="comilla-flotante" alt="comillas decorativas">
+        <p class="p">Me encanta la variedad de actividades. Cada mes es una sorpresa y nos mantiene a mis hijos entretenidos. Súper recomendable.</p>
+        <hr>
+        <div class="d-flex align-items-center justify-content-between mt-4">
+          <div class="d-flex align-items-center">
+            <img src="woman1.png" class="rounded-circle me-2 avatar-img" alt="Lucas">
+            <div>
+              <strong class="d-block">Sofia López</strong>
+              <small class="meta-info">1 año con Pequeplan</small>
+            </div>
+          </div>
+          <div class="text-end">
+          <img src="5-estrellas.svg" alt="★" width="90"> <br>
+            <small class="meta-info">5.0 Estrellas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonio 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="testimonial-card h-100">
+       <img src="comillas.svg" width="45">
+        <p class="p">Mi hija espera con emoción cada caja. ¡Es más que una actividad, es un momento juntas!</p>
+        <hr>
+        <div class="d-flex align-items-center justify-content-between mt-3">
+          <div class="d-flex align-items-center">
+            <img src="woman2.png" class="rounded-circle me-2 avatar-img" alt="Andrea">
+            <div>
+              <strong class="d-block">Andrea Fernández</strong>
+              <small class="meta-info">6 meses con Pequeplan</small>
+            </div>
+          </div>
+          <div class="text-end">
+           <img src="4-estrellas.svg" alt="★" width="90"> <br>
+            <small class="meta-info">4.0 Estrellas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  
+    <!-- NUMBERS -->
+  <section class="section-spacing text-center"> 
+    <div class="container">
+    <div class="row g-4 justify-content-between">
+      <div class="col-6 col-sm-4 col-md-2">
+      <div class="circle-wrapper position-relative">
+        <p class="circle-title-over">+60</p>
+        <img src="CIRCLE.png" class="img-fluid brand-icon-circle mx-auto d-block">
+        <p class="circle-caption">Escuelas confían <span class="d-none d-md-inline"><br></span> en nosotros</p>
+      </div>
+    </div>
+      
+       <div class="col-6 col-sm-4 col-md-2">
+      <div class="circle-wrapper position-relative">
+        <p class="circle-title-over">+1.1k</p>
+        <img src="CIRCLE.png" class="img-fluid brand-icon-circle mx-auto d-block">
+        <p class="circle-caption">Familias nos recomiendan</p>
+      </div>
+    </div>
+      
+        <div class="col-6 col-sm-4 col-md-2">
+      <div class="circle-wrapper position-relative">
+        <p class="circle-title-over">5k</p>
+        <img src="CIRCLE.png" class="img-fluid brand-icon-circle mx-auto d-block">
+        <p class="circle-caption">Vendidas durante <span class="d-none d-md-inline"><br></span> este año</p>
+      </div>
+    </div>
+    
+      <div class="col-6 col-sm-4 col-md-2">
+      <div class="circle-wrapper position-relative">
+        <p class="circle-title-over">+40</p>
+        <img src="CIRCLE.png" class="img-fluid brand-icon-circle mx-auto d-block">
+        <p class="circle-caption">Profesionales nos recomiendan</p>
+      </div>
+    </div>
+      
+        <div class="col-6 col-sm-4 col-md-2">
+      <div class="circle-wrapper position-relative">
+        <p class="circle-title-over">+2k</p>
+        <img src="CIRCLE.png" class="img-fluid brand-icon-circle mx-auto d-block">
+        <p class="circle-caption">Horas de juego generadas</p>
+      </div>
+    </div>
+    </div>  
+    </div>
+      </section>
+  
+  
+<section class="section-spacing container">
+  <h2 class="h2-custom text-center text-uppercase mb-5">Nuestros Profesionales</h2>
+
+  <div class="row gy-5">
+
+    <!-- Profesional 1 -->
+    <div class="col-md-6">
+      <div class="profesional-wrap d-flex flex-column flex-sm-row">
+        <div class="img-wrap">
+          <img src="CANDELA.png" alt="Candela Gomez" class="profesional-img">
+        </div>
+        <div class="card-testimonio">
+          <h5 class="nombre">Candela Gomez</h5>
+          <p class="rol">Psicopedagoga Infantil</p>
+          <hr class="linea-separadora">
+          <p class="texto">"Lo que más destaco de PequePlan es cómo estimula el desarrollo cognitivo y emocional desde el juego. Está muy bien pensado".</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profesional 2 -->
+    <div class="col-md-6">
+      <div class="profesional-wrap d-flex flex-column flex-sm-row">
+        <div class="img-wrap">
+          <img src="SOFIA.png" alt="Sofia Ruiz" class="profesional-img">
+        </div>
+        <div class="card-testimonio">
+          <h5 class="nombre">Sofia Ruiz</h5>
+          <p class="rol">Maestra Nivel Inicial</p>
+          <hr class="linea-separadora">
+          <p class="texto">"Recomiendo PequePlan porque propone actividades creativas que realmente conectan con el interés de los chicos".</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profesional 3 -->
+    <div class="col-md-6">
+      <div class="profesional-wrap d-flex flex-column flex-sm-row">
+        <div class="img-wrap">
+          <img src="LUCIA.png" alt="Lucia Garcia" class="profesional-img">
+        </div>
+        <div class="card-testimonio">
+          <h5 class="nombre">Lucia Garcia</h5>
+          <p class="rol">Directora de Maternal</p>
+          <hr class="linea-separadora">
+          <p class="texto">"PequePlan está pensado con mirada profesional y afectiva. Las familias lo valoran muchísimo y eso se nota en los vínculos".</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profesional 4 -->
+    <div class="col-md-6">
+      <div class="profesional-wrap d-flex flex-column flex-sm-row">
+        <div class="img-wrap">
+          <img src="TOMAS.png" alt="Tomas Páez" class="profesional-img">
+        </div>
+        <div class="card-testimonio">
+          <h5 class="nombre">Tomas Páez</h5>
+          <p class="rol">Psicólogo Infantil</p>
+          <hr class="linea-separadora">
+          <p class="texto">"No solo entretiene, también fortalece el vínculo entre adultos y niños. Las propuestas están pensadas para estimular."</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+<!-- FAQS: Preguntas frecuentes -->
+<section id="FAQ" class="section-spacing container">
+  <div class="row align-items-center">
+    
+    <!-- Columna de preguntas -->
+    <div class="col-md-6">
+      <h2 class="h2-custom text-center text-md-start">PREGUNTAS FRECUENTES</h2>
+      <p class="p text-center text-md-start">Todas las respuestas a dudas comunes.</p>
+      <div class="accordion mt-4" id="faqAccordion">
+        
+        <!-- Ítem de pregunta -->
+        <!-- Ítem de pregunta ABIERTO por defecto -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+      ¿QUÉ INCLUYE EL SERVICIO?
+    </button>
+  </h2>
+  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Nuestro servicio incluye una caja de actividades divertidas y educativas, que vas a recibir cada 15 días en la puerta de tu casa (...)
+    </div>
+  </div>
+</div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              ¿PARA QUÉ EDADES SE RECOMIENDA?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Recomendamos nuestros Kits a partir de la edad de 4 años, pensados siempre con acompañamiento adulto de la familia (...)</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              ¿CÓMO FUNCIONA EL BENEFICIO PEQUESWAP?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Con el beneficio PequeSwap vas a poder canjear tus kits ya terminados por nuevas actividades, encontrá tu PuntoSwap más cercano (...)</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+              ¿CÓMO CANCELO MI SUSCRIPCIÓN?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Podes cancelar tu suscripción ingresado a Mi cuenta, Mis suscripciones, y cancelando tu suscripción cuando vos quieras (...)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna de imagen -->
+    <div class="col-md-6 text-center mt-5 mt-md-0">
+      <img src="FAQ.png" alt="Ilustración FAQs" class="img-fluid img-rounded img-faq">
+    </div>
+
+  </div>
+</section>
+<!-- /FAQS -->
+
+  
+  
+<!-- /CONTACT -->    
+<section class="section-spacing container">
+  <h2 class="h2-custom text-center text-uppercase">Contestamos todas tus dudas</h2>
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <form>
+        <div class="row g-3">
+          <div class="col-12">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col-12">
+            <label class="form-label">Apellido</label>
+            <input type="text" class="form-control" placeholder="Apellido">
+          </div>
+          <div class="col-12">
+            <label class="form-label">E-mail</label>
+            <input type="email" class="form-control" placeholder="ejemplo@mail.com">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6 d-flex flex-column">
+      <label class="form-label">Mensaje</label>
+      <textarea class="form-control flex-grow-1" rows="6" placeholder="Dejá tu mensaje para nosotros..."></textarea>
+      <div class="text-end mt-3">
+        <button type="submit" class="btn btn-primary px-4">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /CONTACT -->  
+
+
+
+<!-- FOOTER: Pie de página -->
+  
+  <footer class="footer-custom">
+  <div class="footer-inner container pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Columna 1: Logo y dirección -->
+      <div class="col-md-4 mb-4">
+        <img src="pequeplan-logo.svg" alt="Pequeplan" style="height: 40px;">
+        <p class="p-costum mt-3 mb-1">Pequeplan S.A</p>
+        <p class="p-costum mb-1">Av Crovara 2550, La Tablada, Bs As Argentina.</p>
+        <p class="p-costum">Seguinos en nuestras redes:</p>
+        <div class="d-flex gap-3 fs-4">
+          <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Navegación -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-fin mb-3">NAVEGACIÓN</h5>
+        <ul class="list-unstyled">
+          <li><a href="#Nosotros" class="text-white text-decoration-none">Sobre nosotros</a></li>
+          <li><a href="#Peque" class="text-white text-decoration-none">¿Cómo funciona?</a></li>
+          <li><a href="#planes" class="text-white text-decoration-none">Planes</a></li>
+          <li><a href="#Pequeswap" class="text-white text-decoration-none">PequeSwap</a></li>
+          <li><a href="#Opiniones" class="text-white text-decoration-none">Opiniones</a></li>
+          <li><a href="#FAQ" class="text-white text-decoration-none">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Newsletter -->
+      <div class="col-md-4">
+        <h5 class="text-fin mb-3">NUESTRO NEWSLETTER</h5>
+        <p class="p-costum">Enterate primero de todas nuestras novedades</p>
+        <form class="d-flex flex-column gap-2">
+          <input type="email" class="form-control" placeholder="Ingresá tu correo electrónico">
+          <button type="submit" class="btn btn-dark btn-custom text align-self-end">Suscribir</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Créditos -->
+    <div class="text-center mt-4">
+      <small class="text-white-50">Valentina Badillo - © 2025 Pequeplan – Todos los derechos reservados.</small>
+    </div>
+  </div>
+    </div>
+</footer>
+  
+<!-- /FOOTER -->
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+  
+<script>
+  const toggler = document.querySelector('.navbar-toggler');
+  const body = document.body;
+
+  toggler.addEventListener('click', function () {
+    body.classList.toggle('offcanvas-open');
+  });
+</script>
+  
+  
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+  
+  
+</body>
+</html>
