@@ -1004,6 +1004,23 @@ html, body {
   }
 }
 
+.team-bounce:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-fade {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInTestimonial 0.6s ease forwards;
+}
+
+@keyframes fadeInTestimonial {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 
 /* ============================== */
@@ -1021,8 +1038,8 @@ html, body {
   padding-bottom: 40px;
 }
   .hero-img {
-    scale: 120%;
-    position: center;
+    scale: 125%;
+    padding-right: 30px;
   }
   
   .section-planes {
@@ -1140,6 +1157,13 @@ html, body {
   .img-faq {
   padding-right: 40px;
   scale: 130%
+  }
+  
+  .rol{
+    text-align: center;
+  }
+  .nombre{
+    text-align: center;
   }
 }
 
@@ -1323,7 +1347,7 @@ html, body {
 @media (max-width: 576px) {
   .circle-title-over {
     font-size: 2.7rem;
-    transform: translate(-50%, -40%); /* más centrado */
+    transform: translate(-50%, -30%); /* más centrado */
   }
     .circle-caption {
     font-size: 0.75rem;
